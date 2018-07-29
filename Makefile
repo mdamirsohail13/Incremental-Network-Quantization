@@ -314,6 +314,7 @@ ifeq ($(DEBUG), 1)
 	NVCCFLAGS += -G
 else
 	COMMON_FLAGS += -DNDEBUG -O2
+	NVCCFLAGS += -G                                 # Added NVCCFLAGS += -G by amir
 endif
 
 # cuDNN acceleration configuration.
